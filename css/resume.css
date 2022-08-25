@@ -517,3 +517,9 @@ p {
     padding: 40px;
   }
 }
+
+@media screen and (max-width:1200px){
+  .blue-dot{
+    display: none;
+  }
+}
