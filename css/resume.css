@@ -230,15 +230,14 @@ p {
 /* Icon animations */
 
 .header .icon-show .row div{
-  animation: animate1 80s linear infinite;
-  animation-delay: -80s;
+  animation: animate1 120s linear infinite;
 }
 
 @keyframes animate1 
 {
   0%
   {
-    transform: translateX(-100%);
+    transform: translateX(-96%);
   }
   100%
   {
@@ -248,15 +247,14 @@ p {
 
 
 .header .icon-show .row:nth-child(even) div{
-  animation: animate3 80s linear infinite;
-  animation-delay: -80s;
+  animation: animate2 60s linear infinite;
 }
 
-@keyframes animate3 
+@keyframes animate2 
 {
   0%
   {
-    transform: translateX(10%);
+    transform: translateX(8%);
   }
   100%
   {
