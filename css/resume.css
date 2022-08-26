@@ -182,11 +182,88 @@ p {
   transform: translate(-50%, -50%);
 }
 
-.header,
+.header {
+  max-height: 850px;
+  padding: 75px;
+}
+
 .section {
   min-height: 850px;
   padding: 75px;
 }
+
+.header .icon-show {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(40em);
+}
+
+.header .icon-show .row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  white-space: nowrap;
+  font-size: 64px;
+  transform: rotate(-20deg);
+}
+
+
+.header .icon-show i {
+  color: rgba(69, 69, 69, 0.444);
+  transition: 1s;
+  padding: 0 5;
+  user-select: none;
+  cursor: default;
+}
+
+.header .icon-show i:hover {
+  transition: 0s;
+  color: var(--blue);
+  text-shadow: 0 0 120px var(--white);
+}
+
+/* Icon animations */
+
+.header .icon-show .row div{
+  animation: animate1 80s linear infinite;
+  animation-delay: -80s;
+}
+
+@keyframes animate1 
+{
+  0%
+  {
+    transform: translateX(-100%);
+  }
+  100%
+  {
+    transform: translateX(100%);
+  }
+}
+
+
+.header .icon-show .row:nth-child(even) div{
+  animation: animate3 80s linear infinite;
+  animation-delay: -80s;
+}
+
+@keyframes animate3 
+{
+  0%
+  {
+    transform: translateX(10%);
+  }
+  100%
+  {
+    transform: translateX(-100%);
+  }
+}
+
 
 /* HEADER */
 
@@ -199,6 +276,7 @@ p {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
+  overflow: hidden;
 }
 .header .list-items-circle li a:hover .fab {
     color: var(--tur);
