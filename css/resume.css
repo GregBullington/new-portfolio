@@ -214,7 +214,8 @@ p {
 
 
 .header .icon-show i {
-  color: rgba(69, 69, 69, 0.444);
+  text-shadow: 0 0 1px var(--black);
+  color: #a7a7a7cf;
   transition: 1s;
   padding: 0 5;
   user-select: none;
@@ -223,8 +224,8 @@ p {
 
 .header .icon-show i:hover {
   transition: 0s;
-  color: var(--blue);
-  text-shadow: 0 0 120px var(--white);
+  color: var(--tur);
+  text-shadow: 0 0 50px var(--purp);
 }
 
 /* Icon animations */
