@@ -250,7 +250,7 @@ const icons =
 
 function multiplyIcons() {
     const element = document.getElementById("icon-show")
-    const allIcons = icons.repeat(6)
+    const allIcons = icons.repeat(8)
 
     element.innerHTML = allIcons
 }
