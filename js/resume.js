@@ -255,4 +255,4 @@ function multiplyIcons() {
     element.innerHTML = allIcons
 }
 
-// multiplyIcons()
+multiplyIcons()
