@@ -183,7 +183,7 @@ p {
 }
 
 .header {
-  max-height: 850px;
+  max-height: 900px;
   padding: 75px;
 }
 
@@ -199,7 +199,7 @@ p {
   background: none;
   display: flex;
   flex-direction: column;
-  transform: translateY(40em);
+  transform: translateY(45em);
 }
 
 .header .icon-show .row {
